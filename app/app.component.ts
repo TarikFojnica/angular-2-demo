@@ -19,17 +19,12 @@ import {Component} from 'angular2/core';
     `
 })
 
-export class Hero {
-    id: number;
-    name: string;
-}
-
 export class AppComponent {
     title = 'Tarik Infolog 2';
 
     selectedHero: Hero = {
         id: 1,
-        name: 'Tarik Fojnica 2'
+        name: 'Tarik Fojnica3'
     };
 
     public heroes = HEROES;
@@ -38,6 +33,12 @@ export class AppComponent {
         this.selectedHero = hero;
     }
 }
+
+export class Hero {
+    id: number;
+    name: string;
+}
+
 
 var HEROES: Hero[] = [
     { "id": 11, "name": "Mr. Nice" },

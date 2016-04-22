@@ -9,41 +9,41 @@ System.register(['angular2/core'], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var Hero, AppComponent, HEROES;
+    var AppComponent, Hero, HEROES;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            Hero = (function () {
-                function Hero() {
-                }
-                Hero = __decorate([
-                    core_1.Component({
-                        selector: 'my-app',
-                        template: "\n    <h2>{{selectedHero.name}} details!</h2>\n    <div><label>id: </label>{{selectedHero.id}}</div>\n    <div>\n        <label>name: </label>\n        <input [(ngModel)]=\"selectedHero.name\" placeholder=\"name\"/>\n    </div>\n\n    <h2>My Heroes</h2>\n    <ul class=\"heroes\">\n        <li *ngFor=\"#hero of heroes\" (click)=\"onSelect(hero)\">\n            <span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n        </li>\n    </ul>\n    "
-                    }), 
-                    __metadata('design:paramtypes', [])
-                ], Hero);
-                return Hero;
-            })();
-            exports_1("Hero", Hero);
             AppComponent = (function () {
                 function AppComponent() {
                     this.title = 'Tarik Infolog 2';
                     this.selectedHero = {
                         id: 1,
-                        name: 'Tarik Fojnica 2'
+                        name: 'Tarik Fojnica3'
                     };
                     this.heroes = HEROES;
                 }
                 AppComponent.prototype.onSelect = function (hero) {
                     this.selectedHero = hero;
                 };
+                AppComponent = __decorate([
+                    core_1.Component({
+                        selector: 'my-app',
+                        template: "\n    <h2>{{selectedHero.name}} details!</h2>\n    <div><label>id: </label>{{selectedHero.id}}</div>\n    <div>\n        <label>name: </label>\n        <input [(ngModel)]=\"selectedHero.name\" placeholder=\"name\"/>\n    </div>\n\n    <h2>My Heroes</h2>\n    <ul class=\"heroes\">\n        <li *ngFor=\"#hero of heroes\" (click)=\"onSelect(hero)\">\n            <span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n        </li>\n    </ul>\n    "
+                    }), 
+                    __metadata('design:paramtypes', [])
+                ], AppComponent);
                 return AppComponent;
             })();
             exports_1("AppComponent", AppComponent);
+            Hero = (function () {
+                function Hero() {
+                }
+                return Hero;
+            })();
+            exports_1("Hero", Hero);
             HEROES = [
                 { "id": 11, "name": "Mr. Nice" },
                 { "id": 12, "name": "Narco" },
