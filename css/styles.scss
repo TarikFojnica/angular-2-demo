@@ -1,3 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import "bootstrap.min";
+@import "variables";
+
+
 body {
+	background-color: #E8EBEC;
+}
+
+.wrapper-container {
 	background-color: #fff;
+}
+
+aside {
+	background-color: $dark;
+	height: 500px;
+
+	.inner {
+		padding: 20px 10px;
+
+		h1 {
+			font-weight: 300;
+			color: rgba(white, .9);
+			font-size: 1.7em;
+			margin: 0;
+		}
+	}
+}
+
+header {
+	background-color: #fff;
+	height: 70px;
+}
+
+.page-details {
+	background-color: #F7F7F7;
+	height: 500px;
+
+	h2 {
+		color: $primary;
+		margin: 10px 0 25px 0;
+		font-weight: 300;
+		font-size: 2em;
+	}
+
+	h3 {
+		color: $primary;
+		margin: 0;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			padding: 10px;
+			margin-bottom: 5px;
+
+			&.active {
+				background-color: $primary;
+				color: #fff;
+			}
+
+			&:hover {
+				background-color: $primary;
+				color: #fff;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.course-details {
+		padding: 10px;
+		background-color: #fff;
+
+		h3 {
+			font-size: 1.3em;
+
+		}
+
+		table {
+		}
+	}
 }

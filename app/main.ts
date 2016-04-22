@@ -1,6 +1,6 @@
 import {bootstrap}    from 'angular2/platform/browser';
 import {AppComponent} from './app.component';
-import {SidebarComponent} from "./sidebar.component";
+import {CourseDetailsComponent} from "./courseDetails.component";
 
-bootstrap(AppComponent);
-bootstrap(SidebarComponent);
+//bootstrap(AppComponent);
+bootstrap(CourseDetailsComponent);
